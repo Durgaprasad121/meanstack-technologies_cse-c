@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Callbacks</h2>
+
+<h1 id="demo"></h1>
+<script>
+function myDisplayer(something) {
+  document.getElementById("demo").innerHTML = something;
+  /*document.getElementById("demo").innerHTML = something1;*/
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let concat = num1+" "+ num2;
+  myCallback(concat);
+}
+
+myCalculator(d=window.prompt(),e=window.prompt(), myDisplayer);
+</script>
+
+</body>
+</html>
